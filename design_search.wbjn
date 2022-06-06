@@ -1,0 +1,134 @@
+﻿# encoding: utf-8
+# 2021 R2
+import math
+import os
+
+def equilateral_area(side_length):
+	return (side_length**2 * math.sqrt(3))/4
+
+def equilateral_side(area):
+	return math.sqrt(4*area/math.sqrt(3))
+
+
+def convert_re_to_flow_rate(Re, W, H):
+	mu = 0.001003
+	rho = 998.2
+	A = W * H
+	P = 2 * W + 2 * H
+	DH = 4 * A / P
+	Q = (mu * A * Re) / (rho * DH)
+	return Q * 60 / 1e-9
+
+SetScriptVersion(Version="21.2.209")
+
+# hook into the parameter and fluent system
+designPoint = Parameters.GetDesignPoint(Name="0")
+fluent = GetSystem(Name="FFF")
+fluentsetup = fluent.GetContainer(ComponentName="Setup")
+
+# get access to the relevant parameters
+channelwidth_param = Parameters.GetParameter(Name="P9")
+channelheight_param = Parameters.GetParameter(Name="P10")
+heightundernotch_param = Parameters.GetParameter(Name="P22")
+bodysizingelement_param = Parameters.GetParameter(Name="P7")
+notchlength_param = Parameters.GetParameter(Name="P11")
+max_dpm_particles_param = Parameters.GetParameter(Name="P27")
+re_param = Parameters.GetParameter(Name="P29")
+number_of_steps_param = Parameters.GetParameter(Name="P31")
+max_number_of_fluent_iterations_param = Parameters.GetParameter(Name="P30")
+flow_rate_param = Parameters.GetParameter("P28")
+
+print("\n\n\n-------------------------------------------\n")
+
+widths = [120]
+nreplicates = 1
+max_number_of_fluent_iterations = 2000
+number_of_steps = 100
+max_dpm_particles = 5000
+
+base_re = 83
+re_array=[
+	base_re,
+	#*1.25,
+	base_re*0.75,
+	base_re*0.5,
+	base_re*0.25
+]
+re_array=[base_re*.25]
+
+base_height = widths[0]/4
+notchheights = [
+	base_height,
+	base_height+1,
+	base_height-1,
+	base_height+5,
+	base_height-5,
+	base_height+10,
+	base_height-10
+]
+notchheights = [base_height];
+
+ndesignpoints = len(widths)
+
+
+designPoint.SetParameterExpression(
+	Parameter=max_dpm_particles_param,
+	Expression=("%d" % max_dpm_particles))
+designPoint.SetParameterExpression(
+	Parameter=number_of_steps_param,
+	Expression=("%d" % number_of_steps))
+designPoint.SetParameterExpression(
+	Parameter=max_number_of_fluent_iterations_param,
+	Expression=("%d" % max_number_of_fluent_iterations))
+
+# start the design points here
+for i in range(0,nreplicates):
+	for k in range(0,ndesignpoints):
+		width = widths[k]
+		height = width/2
+		notchheight = height/2
+		heightundernotch = height - notchheight
+		notchlength = height
+
+		sizefactor = (40*80)/equilateral_area(3.5)
+		bodysizing = equilateral_side((width*height)/sizefactor)
+
+		print("\n- STARTING NEW SIMULATION -")
+		print("RUN %d of %d" % ((i*ndesignpoints+k+1), (nreplicates*ndesignpoints)))
+		print("Width: %.2f um, Height: %.2f um, Notch Length: %.2f um, Height Under Notch: %.2f um, Repeat #: %d" % (width, height, notchlength, heightundernotch, i+1))
+
+		if notchheight < height:
+			designPoint.SetParameterExpression(
+			    Parameter=channelwidth_param,
+			    Expression=("%dE-06" % width))
+			designPoint.SetParameterExpression(
+			    Parameter=channelheight_param,
+			    Expression=("%dE-06" % height))
+			designPoint.SetParameterExpression(
+			    Parameter=heightundernotch_param,
+			    Expression=("%dE-06" % heightundernotch))
+			designPoint.SetParameterExpression(
+			    Parameter=bodysizingelement_param,
+			    Expression=("%.3fE-06" % bodysizing))
+			designPoint.SetParameterExpression(
+				Parameter=notchlength_param,
+				Expression=("%dE-06" % notchlength))
+
+			for re in re_array:
+				designPoint.SetParameterExpression(
+					Parameter=re_param,
+					Expression=("%d" % re))
+				print("Reynolds number: %d" % re)
+
+				q = round(convert_re_to_flow_rate(re, width*1e-6, height*1e-6))
+				designPoint.SetParameterExpression(
+					Parameter=flow_rate_param,
+					Expression=("%d" % q)) 
+				print("Flow Rate: %d ul/min" % q)
+
+				Update()
+
+				fluentsetup.SendCommand(Command='(load "C:/Users/rylab/Desktop/microfluidics-opt/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm")')
+
+
+print("Done!")			

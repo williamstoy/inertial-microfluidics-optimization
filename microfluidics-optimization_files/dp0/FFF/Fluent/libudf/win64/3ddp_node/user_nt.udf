@@ -1,0 +1,5 @@
+CSOURCES= $(SRC)inertial-lift-udfs.c
+HSOURCES=
+VERSION=3ddp_node
+PARALLEL_NODE=intel
+GPU_SUPPORT=off
