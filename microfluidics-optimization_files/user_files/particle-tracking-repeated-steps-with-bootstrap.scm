@@ -16,7 +16,7 @@
 ;; DEFINITIONS
 (define particle_diameter 10e-6)
 (define particle_radius (/ particle_diameter 2))
-(define root "C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files")
+(define root "C:\\Users\\rylab\\Desktop\\inertial-microfluidics-optimization\\microfluidics-optimization_files")
 
 ;; FUNCTION DEFINITIONS
 (define (append-elt lst x)

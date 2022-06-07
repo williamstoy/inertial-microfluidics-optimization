@@ -128,7 +128,7 @@ for i in range(0,nreplicates):
 
 				Update()
 
-				fluentsetup.SendCommand(Command='(load "C:/Users/rylab/Desktop/microfluidics-opt/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm")')
+				fluentsetup.SendCommand(Command='(load "C:/Users/rylab/Desktop/inertial-microfluidics-optimization/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm")')
 
 
 print("Done!")			
