@@ -6,7 +6,7 @@ To run the optimization:
 1. Open ANSYS Workbench
 2. Load the workbench file in the root directory `.\microfluidics-optimization.wb`
 3. Change the parameters as necessary
-4. Run the optimization
+4. Run the optimization by clicking 'Update All Design Points'
 5. ???
 6. Profit!
 
