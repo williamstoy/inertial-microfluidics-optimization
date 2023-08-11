@@ -19,7 +19,8 @@ microfluidics-optimization_files/user_files/FluentReportServer/media/*.*
 *.pid
 *.status
 microfluidics-optimization_files/user_files/data/likelybaddata-noreflections/reservedata/desktop.ini
-microfluidics-optimization_files/progress_files/dp0/FFF/*.*
+microfluidics-optimization_files/progress_files/dp0/FFF/Fluent/*.*
 microfluidics-optimization_files/dp0/FFF/Fluent/SolutionMonitor.gz
 microfluidics-optimization_files/dp0/FFF/Fluent/*.cas.h5
 cleanup-fluent-*.bat
+microfluidics-optimization_files/progress_files/dp0/FFF/Fluent/*.png
