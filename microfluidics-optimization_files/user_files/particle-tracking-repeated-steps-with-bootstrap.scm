@@ -9,14 +9,15 @@
 ;; Particles are then sampled at the outlet plane and re-injected in subsequent steps.
 
 ;; LOAD THE CASE FILE (otherwise this is strangely unreliable)
-;(define root "C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files")
+;(define root "{{ CURRENT_USER }}\\Desktop\\microfluidics-opt\\microfluidics-optimization_files")
 ;(ti-menu-load-string (format #f "!copy \"~a\\user_files\\fluent-case-backup\\FFF-Setup-Output.cas.h5\" \"~a\\dp0\\FFF\\Fluent\\FFF-Setup-Output.cas.h5\"" root root))
 
 
 ;; DEFINITIONS
 (define particle_diameter 10e-6)
 (define particle_radius (/ particle_diameter 2))
-(define root "C:\\Users\\rylab\\Desktop\\inertial-microfluidics-optimization\\microfluidics-optimization_files")
+;; this file will be run from the user_files directory, so we need to go up one level (remnant of when I hardcoded the path)
+(define root "..")
 
 ;; FUNCTION DEFINITIONS
 (define (append-elt lst x)

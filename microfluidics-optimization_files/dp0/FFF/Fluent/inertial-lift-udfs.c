@@ -585,7 +585,12 @@ DEFINE_DPM_INJECTION_INIT(particle_init,I)
   double particle_mean = Get_Input_Parameter("particle_diameter");
   double particle_std = Get_Input_Parameter("particle_diameter_std");
 
-  double zexclude = 3;
+  // NB: INSERTING particles on the side 1/3rds of the channel greatly increases the sorting speed
+  // and lowers the number of notch features that are required to focus the particles
+  // realized this because the particles that focus the slowest start in the top center quadrant
+  // set zexclude to 3 to restrict particle insertion to the outer 1/3rds of the channel
+  // set zexclude to 1 to put particles across the whole channel inlet width
+  double zexclude = 1;
 
   Message("Initializing Injection: %s\n",I->name);
   loop(p,I->p)  // Standard ANSYS FLUENT Looping Macro to get particle streams in an Injection
@@ -601,13 +606,19 @@ DEFINE_DPM_INJECTION_INIT(particle_init,I)
       d = gaussrand(particle_mean, particle_std);
       P_DIAM(p) = d;
 
-      // only put the particles in the outer 2/3 of the channel
+      // define particle z locations (across the width of the channel)
       r = get_random();
-      y = ((H-d) * r + d/2) - H/2;
+      y = (r * (H - d) + d/2 ) - H/2;
       r = get_random();
       double r2 = get_random();
       s = (double)SIGN(2 * r2 - 1);
-      z = s * (r * (W/zexclude - d) + (W/(2*zexclude) + d/2));
+
+      if (zexclude != 1) {
+        z = s * (r * (W/zexclude - d) + (W/(2*zexclude) + d/2));
+      } else {
+        z = (r * (W - d) + d/2 ) - W/2;
+      }
+      
 
       P_POS(p)[1] = y;
       P_POS(p)[2] = z;
