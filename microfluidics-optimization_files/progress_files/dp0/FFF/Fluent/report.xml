@@ -2,7 +2,7 @@
 <version>
 Fluent
 Version: 3d, dp, pbns, lam (3d, double precision, pressure-based, laminar)
-Release: 21.2.0
+Release: 23.2.0
 Title: 
 </version>
 
@@ -27,7 +27,7 @@ Models
    Structure                    Disabled   
    Acoustics                    Disabled   
    Eulerian Wall Film           Disabled   
-   Potential/Li-ion Battery     Disabled   
+   Potential/Electrochemistry   Disabled   
    Multiphase                   Disabled   
 
 </Models>
@@ -52,27 +52,23 @@ Material Properties
 
    Material: water-liquid (fluid)
 
-      Property                        Units      Method     Value(s)   
-      --------------------------------------------------------------
-      Density                         kg/m^3     constant   998.2      
-      Cp (Specific Heat)              J/(kg K)   constant   4182       
-      Thermal Conductivity            W/(m K)    constant   0.6        
-      Viscosity                       kg/(m s)   constant   0.001003   
-      Molecular Weight                kg/kmol    constant   18.0152    
-      Thermal Expansion Coefficient   K^-1       constant   0          
-      Speed of Sound                  m/s        none       #f         
+      Property               Units      Method     Value(s)   
+      -----------------------------------------------------
+      Density                kg/m^3     constant   998.2      
+      Cp (Specific Heat)     J/(kg K)   constant   4182       
+      Thermal Conductivity   W/(m K)    constant   0.6        
+      Viscosity              kg/(m s)   constant   0.001003   
+      Molecular Weight       kg/kmol    constant   18.0152    
 
    Material: air (fluid)
 
-      Property                        Units      Method     Value(s)     
-      ----------------------------------------------------------------
-      Density                         kg/m^3     constant   1.225        
-      Cp (Specific Heat)              J/(kg K)   constant   1006.43      
-      Thermal Conductivity            W/(m K)    constant   0.0242       
-      Viscosity                       kg/(m s)   constant   1.7894e-05   
-      Molecular Weight                kg/kmol    constant   28.966       
-      Thermal Expansion Coefficient   K^-1       constant   0            
-      Speed of Sound                  m/s        none       #f           
+      Property               Units      Method     Value(s)     
+      -------------------------------------------------------
+      Density                kg/m^3     constant   1.225        
+      Cp (Specific Heat)     J/(kg K)   constant   1006.43      
+      Thermal Conductivity   W/(m K)    constant   0.0242       
+      Viscosity              kg/(m s)   constant   1.7894e-05   
+      Molecular Weight       kg/kmol    constant   28.966       
 
    Material: aluminum (solid)
 
@@ -156,7 +152,7 @@ Solver Settings
       ---------------------------------------
       Absolute Velocity Formulation   yes       
 
-   Pseudo Transient Explicit Relaxation Factors
+   Pseudo Time Explicit Relaxation Factors
 
       Variable            Relaxation Factor   
       -------------------------------------
@@ -173,10 +169,10 @@ Solver Settings
 
    Pressure-Velocity Coupling
 
-      Parameter          Value     
-      --------------------------
-      Type               Coupled   
-      Pseudo Transient   yes       
+      Parameter                               Value     
+      -----------------------------------------------
+      Type                                    Coupled   
+      Pseudo Time Method (Global Time Step)   yes       
 
    Discretization Scheme
 
@@ -187,12 +183,12 @@ Solver Settings
 
    Solution Limits
 
-      Quantity                    Limit   
-      ---------------------------------
-      Minimum Absolute Pressure   1       
-      Maximum Absolute Pressure   5e+10   
-      Minimum Temperature         1       
-      Maximum Temperature         5000    
+      Quantity                          Limit           
+      -----------------------------------------------
+      Minimum Absolute Pressure [psi]   0.00014503774   
+      Maximum Absolute Pressure [psi]   7251887.2       
+      Minimum Static Temperature [K]    1               
+      Maximum Static Temperature [K]    5000            
 
 </SolverSettings>
 

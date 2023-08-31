@@ -8,16 +8,10 @@
 ;; we first release particles at the inlet from an initial injection DPM definition.
 ;; Particles are then sampled at the outlet plane and re-injected in subsequent steps.
 
-;; LOAD THE CASE FILE (otherwise this is strangely unreliable)
-;(define root "{{ CURRENT_USER }}\\Desktop\\microfluidics-opt\\microfluidics-optimization_files")
-;(ti-menu-load-string (format #f "!copy \"~a\\user_files\\fluent-case-backup\\FFF-Setup-Output.cas.h5\" \"~a\\dp0\\FFF\\Fluent\\FFF-Setup-Output.cas.h5\"" root root))
-
-
 ;; DEFINITIONS
 (define particle_diameter 10e-6)
 (define particle_radius (/ particle_diameter 2))
-;; this file will be run from the user_files directory, so we need to go up one level (remnant of when I hardcoded the path)
-(define root "..")
+(define root "C:\\Users\\williamstoy\\Documents\\Github\\inertial-microfluidics-optimization")
 
 ;; FUNCTION DEFINITIONS
 (define (append-elt lst x)
@@ -39,6 +33,10 @@
         (/  
           (summation li (average li))
           (- (length li) 1))))
+
+(define (standard-deviation lst)
+  (let ((mu (average lst)))
+    (sqrt (average (map (lambda (x) (expt (- x mu) 2)) lst)))))
 
 (define (process-step-data dpm-filename data-filename) (with-input-from-file dpm-filename 
 	(lambda ()
@@ -62,18 +60,18 @@
 		; write the file for each step
 		(define port (open-output-file data-filename #t))
 		(write-string (format #f "~a,~a,~a,~a,~a,~a"
-			; compute the values of x, y, and velocity
-			(average ypos-array) (sd ypos-array)
-			(average zpos-array) (sd zpos-array)
-			(average xvelocity-array) (sd xvelocity-array)
+			; compute the values of y, z, and x-velocity
+			(average ypos-array) (standard-deviation ypos-array)
+			(average zpos-array) (standard-deviation zpos-array)
+			(average xvelocity-array) (standard-deviation xvelocity-array)
 		) port)
 		(newline port)
 		(close-output-port port)
 
 		; display the results that will have been written to the file for feedback
-		(display (format #f "YPos: ~a +/- ~a\n" (average ypos-array) (sd ypos-array)))
-		(display (format #f "ZPos: ~a +/- ~a\n" (average zpos-array) (sd zpos-array)))
-		(display (format #f "XVelocity: ~a +/- ~a\n" (average xvelocity-array) (sd xvelocity-array)))
+		(display (format #f "YPos: ~a +/- ~a\n" (average ypos-array) (standard-deviation ypos-array)))
+		(display (format #f "ZPos: ~a +/- ~a\n" (average zpos-array) (standard-deviation zpos-array)))
+		(display (format #f "XVelocity: ~a +/- ~a\n" (average xvelocity-array) (standard-deviation xvelocity-array)))
 	)
 ))
 
@@ -87,6 +85,8 @@
 (rp-var-define 're_scheme 0.0 'real #f)
 (rp-var-define 'max_number_of_fluent_iterations_scheme 0.0 'real #f)
 (rp-var-define 'number_of_steps_scheme 0.0 'real #f)
+(rp-var-define 'zexclude_scheme 0.0 'real #f)
+;(rp-var-define 'root_directory_scheme "" 'string #f)
 
 ; execute the port
 (ti-menu-load-string (format #f "/define/user-defined/execute-on-demand \"port_input_vars_to_scheme::libudf\""))
@@ -101,7 +101,8 @@
 (define ninjections (rpgetvar 'number_of_steps_scheme))
 (define niterations (rpgetvar 'max_number_of_fluent_iterations_scheme))
 (define q (rpgetvar 'volumetric_flow_rate_ul_per_min_scheme))
-(define param_string (format #f "cw~a_ch~a_cl~a_nh~a_nl~a_q~a_re~a" cw ch cl nh nl q re))
+(define exc (rpgetvar 'zexclude_scheme))
+(define param_string (format #f "cw~a_ch~a_cl~a_nh~a_nl~a_q~a_re~a_exc~a" cw ch cl nh nl q re exc))
 
 ; edit the analysis surfaces
 ; inlet surface
@@ -142,10 +143,10 @@
 (ti-menu-load-string (format #f "/solve/iterate ~a" niterations))
 
 ; copy the output parameters results to the data folder
-(ti-menu-load-string (format #f "!del /F /Q ~a\\user_files\\data\\*_~a.*" root param_string))
-(ti-menu-load-string (format #f "/define/parameters/output-parameters/write-all-to-file \"~a\\user_files\\data\\sim_params_~a.txt\"" root param_string))
-(ti-menu-load-string (format #f "/file/write-profile \"~a\\user_files\\data\\inlet_velocity_profile_~a.prof\" line-inlet-horizontal () velocity-magnitude ()" root param_string))
-(ti-menu-load-string (format #f "/file/write-profile \"~a\\user_files\\data\\outlet_velocity_profile_~a.prof\" line-outlet-horizontal () velocity-magnitude ()" root param_string))
+(ti-menu-load-string (format #f "!del /F /Q ~a\\microfluidics-optimization_files\\user_files\\data\\*_~a.*" root param_string))
+(ti-menu-load-string (format #f "/define/parameters/output-parameters/write-all-to-file \"~a\\microfluidics-optimization_files\\user_files\\data\\sim_params_~a.txt\"" root param_string))
+(ti-menu-load-string (format #f "/file/write-profile \"~a\\microfluidics-optimization_files\\user_files\\data\\inlet_velocity_profile_~a.prof\" line-inlet-horizontal () velocity-magnitude ()" root param_string))
+(ti-menu-load-string (format #f "/file/write-profile \"~a\\microfluidics-optimization_files\\user_files\\data\\outlet_velocity_profile_~a.prof\" line-outlet-horizontal () velocity-magnitude ()" root param_string))
 
 
 
@@ -158,9 +159,9 @@
 (ti-menu-load-string (format #f "/report/dpm-sample initial-injection () outlet () inlet-capture () no"))
 
 ; save the relevant output data
-(ti-menu-load-string (format #f "!copy \"~a\\dp0\\FFF\\Fluent\\outlet.dpm\" \"~a\\user_files\\data\\dpm\\dpm_data_~a_step~a.dpm\"" root root param_string 1))
-(ti-menu-load-string (format #f "!copy \"~a\\dp0\\FFF\\Fluent\\inlet-capture.dpm\" \"~a\\user_files\\data\\dpm\\dpm_inlet_data_~a_step~a.dpm\"" root root param_string 1))
-(process-step-data (format #f "~a\\dp0\\FFF\\Fluent\\outlet.dpm" root) (format #f "~a\\user_files\\data\\step_data_~a.csv" root param_string))
+(ti-menu-load-string (format #f "!copy \"~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm\" \"~a\\microfluidics-optimization_files\\user_files\\data\\dpm\\dpm_data_~a_step~a.dpm\"" root root param_string 1))
+(ti-menu-load-string (format #f "!copy \"~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\inlet-capture.dpm\" \"~a\\microfluidics-optimization_files\\user_files\\data\\dpm\\dpm_inlet_data_~a_step~a.dpm\"" root root param_string 1))
+(process-step-data (format #f "~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm" root) (format #f "~a\\microfluidics-optimization_files\\user_files\\data\\step_data_~a.csv" root param_string))
 
 ;; LOOP THE INJECTIONS
 (DO ((x 1 (+ 1 x))) ((> x (- ninjections 1)))
@@ -170,7 +171,7 @@
 	(ti-menu-load-string (format #f "/report/dpm-sample file-injection () outlet () inlet-capture () no"))
 
 	; save the relevant output data
-	(ti-menu-load-string (format #f "!copy \"~a\\dp0\\FFF\\Fluent\\outlet.dpm\" \"~a\\user_files\\data\\dpm\\dpm_data_~a_step~a.dpm\"" root root param_string (+ x 1)))
-	(ti-menu-load-string (format #f "!copy \"~a\\dp0\\FFF\\Fluent\\inlet-capture.dpm\" \"~a\\user_files\\data\\dpm\\dpm_inlet_data_~a_step~a.dpm\"" root root param_string (+ x 1)))
-	(process-step-data (format #f "~a\\dp0\\FFF\\Fluent\\outlet.dpm" root) (format #f "~a\\user_files\\data\\step_data_~a.csv" root param_string))
+	(ti-menu-load-string (format #f "!copy \"~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm\" \"~a\\microfluidics-optimization_files\\user_files\\data\\dpm\\dpm_data_~a_step~a.dpm\"" root root param_string (+ x 1)))
+	(ti-menu-load-string (format #f "!copy \"~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\inlet-capture.dpm\" \"~a\\microfluidics-optimization_files\\user_files\\data\\dpm\\dpm_inlet_data_~a_step~a.dpm\"" root root param_string (+ x 1)))
+	(process-step-data (format #f "~a\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm" root) (format #f "~a\\microfluidics-optimization_files\\user_files\\data\\step_data_~a.csv" root param_string))
 )

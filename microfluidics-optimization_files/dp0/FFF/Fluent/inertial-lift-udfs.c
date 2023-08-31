@@ -536,7 +536,7 @@ DEFINE_INIT(precalculate_inertial_lift_coefficients_and_umax, domain)
 DEFINE_ON_DEMAND(port_input_vars_to_scheme)
 {
   // port the input parameters to scheme parameters
-  double channel_width, channel_height, channel_length, notch_height, notch_length, re, max_number_of_fluent_iterations, number_of_steps, volumetric_flow_rate_ul_per_min;
+  double channel_width, channel_height, channel_length, notch_height, notch_length, re, max_number_of_fluent_iterations, number_of_steps, volumetric_flow_rate_ul_per_min, zexclude;
   
   channel_width = Get_Input_Parameter("channel_width");
   channel_height = Get_Input_Parameter("channel_height");
@@ -544,6 +544,7 @@ DEFINE_ON_DEMAND(port_input_vars_to_scheme)
   notch_height = Get_Input_Parameter("notch_height");
   notch_length = Get_Input_Parameter("notch_length");
   re = Get_Input_Parameter("re");
+  zexclude = Get_Input_Parameter("zexclude");
   max_number_of_fluent_iterations = Get_Input_Parameter("max_number_of_fluent_iterations");
   number_of_steps = Get_Input_Parameter("number_of_steps");
   volumetric_flow_rate_ul_per_min = Get_Input_Parameter("volumetric_flow_rate_ul_per_min");
@@ -554,6 +555,7 @@ DEFINE_ON_DEMAND(port_input_vars_to_scheme)
   RP_Set_Real("notch_height_scheme", (real) (1e6 * notch_height));
   RP_Set_Real("notch_length_scheme", (real) (1e6 * notch_length));
   RP_Set_Real("re_scheme", (real) re);
+  RP_Set_Real("zexclude_scheme", (real) zexclude);
   RP_Set_Real("max_number_of_fluent_iterations_scheme", (real) max_number_of_fluent_iterations);
   RP_Set_Real("number_of_steps_scheme", (real) number_of_steps);
   RP_Set_Real("volumetric_flow_rate_ul_per_min_scheme", (real) volumetric_flow_rate_ul_per_min);
@@ -590,7 +592,7 @@ DEFINE_DPM_INJECTION_INIT(particle_init,I)
   // realized this because the particles that focus the slowest start in the top center quadrant
   // set zexclude to 3 to restrict particle insertion to the outer 1/3rds of the channel
   // set zexclude to 1 to put particles across the whole channel inlet width
-  double zexclude = 1;
+  double zexclude = Get_Input_Parameter("zexclude");
 
   Message("Initializing Injection: %s\n",I->name);
   loop(p,I->p)  // Standard ANSYS FLUENT Looping Macro to get particle streams in an Injection
@@ -610,11 +612,13 @@ DEFINE_DPM_INJECTION_INIT(particle_init,I)
       r = get_random();
       y = (r * (H - d) + d/2 ) - H/2;
       r = get_random();
-      double r2 = get_random();
-      s = (double)SIGN(2 * r2 - 1);
+      //double r2 = get_random();
+      //s = (double)SIGN(2 * r2 - 1);
 
       if (zexclude != 1) {
-        z = s * (r * (W/zexclude - d) + (W/(2*zexclude) + d/2));
+        //z = s .* (r .* ((W-W/zexclude)/2 - d/2) + (W/zexclude)/2);
+        // only inject particles on the positive side (easier to manufacture)
+        z = (r .* ((W-W/zexclude)/2 - d/2) + (W/zexclude)/2);
       } else {
         z = (r * (W - d) + d/2 ) - W/2;
       }

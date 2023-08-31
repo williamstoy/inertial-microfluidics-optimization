@@ -1,14 +1,17 @@
 ﻿# encoding: utf-8
-# 2021 R2
+# 2023 R2
+# DO NOT MOVE THIS FILE FROM .\inertial-microfluidics-optimization\
 import math
 import os
+
+# use forward slashes here
+#root_directory = "C:/Users/williamstoy/Documents/GitHub/inertial-microfluidics-optimization"
 
 def equilateral_area(side_length):
 	return (side_length**2 * math.sqrt(3))/4
 
 def equilateral_side(area):
 	return math.sqrt(4*area/math.sqrt(3))
-
 
 def convert_re_to_flow_rate(Re, W, H):
 	mu = 0.001003
@@ -19,7 +22,13 @@ def convert_re_to_flow_rate(Re, W, H):
 	Q = (mu * A * Re) / (rho * DH)
 	return Q * 60 / 1e-9
 
-SetScriptVersion(Version="21.2.209")
+SetScriptVersion(Version="23.2")
+
+# get the project root root directory
+root_directory = os.path.dirname(os.path.realpath(__file__))
+# replace the backslashes with forward slashes in the root_directory
+root_directory_forward_slashes = root_directory.replace("\\", "/")
+scm_file_load_command = '(load "' + root_directory_forward_slashes + '/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm' + '")'
 
 # hook into the parameter and fluent system
 designPoint = Parameters.GetDesignPoint(Name="0")
@@ -37,6 +46,8 @@ re_param = Parameters.GetParameter(Name="P29")
 number_of_steps_param = Parameters.GetParameter(Name="P31")
 max_number_of_fluent_iterations_param = Parameters.GetParameter(Name="P30")
 flow_rate_param = Parameters.GetParameter("P28")
+z_exclude_param = Parameters.GetParameter("P37")
+#root_directory_param = Parameters.GetParameter("P34")
 
 print("\n\n\n-------------------------------------------\n")
 
@@ -45,16 +56,22 @@ nreplicates = 1
 max_number_of_fluent_iterations = 2000
 number_of_steps = 100
 max_dpm_particles = 5000
+z_exclude_value = 3
 
-base_re = 83
+base_re = 80
 re_array=[
-	base_re,
-	#*1.25,
+	base_re*0.25,
+	base_re*0.30,
+	base_re*0.35,
+	base_re*0.40,
+	base_re*0.45,
+	base_re*0.50,
+	base_re*0.55,
+	base_re*0.60,
+	base_re*0.65,
 	base_re*0.75,
-	base_re*0.5,
-	base_re*0.25
+	base_re*1.00
 ]
-re_array=[base_re*.25]
 
 base_height = widths[0]/4
 notchheights = [
@@ -66,11 +83,16 @@ notchheights = [
 	base_height+10,
 	base_height-10
 ]
-notchheights = [base_height];
+notchheights = [base_height]
 
 ndesignpoints = len(widths)
 
-
+#designPoint.SetParameterExpression(
+#	Parameter=root_directory_param,
+#	Expression=("\"%s\"" % root_directory))
+designPoint.SetParameterExpression(
+	Parameter=z_exclude_param,
+	Expression=("%d" % z_exclude_value))
 designPoint.SetParameterExpression(
 	Parameter=max_dpm_particles_param,
 	Expression=("%d" % max_dpm_particles))
@@ -128,7 +150,7 @@ for i in range(0,nreplicates):
 
 				Update()
 
-				fluentsetup.SendCommand(Command='(load "C:/Users/rylab/Desktop/inertial-microfluidics-optimization/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm")')
+				fluentsetup.SendCommand(Command=scm_file_load_command)
 
 
 print("Done!")			

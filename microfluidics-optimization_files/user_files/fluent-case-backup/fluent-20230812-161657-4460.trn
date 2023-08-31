@@ -1,0 +1,191 @@
+Auto-Transcript Start Time:  16:16:57, 12 Aug 2023 Eastern Daylight Time 
+Current Directory: "C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup"
+
+              Welcome to ANSYS Fluent 2023 R2
+
+              Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 29 2023 07:52:07 EDT  Build Id: 10212  
+ 
+Connected License Server List:	
+
+*********************************************
+Info: Your license enables 4-way parallel execution.
+For faster simulations, please start the application with the appropriate parallel options.
+*********************************************
+
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "DESKTOP-PQLTOCI" (win64).
+
+------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                  
+------------------------------------------------------------------------------------------
+n0    DESKTOP-PQLTOCI  1/16  Windows-x64  1576   12th Gen Intel(R) Core(TM) i5-12600K    
+host  DESKTOP-PQLTOCI        Windows-x64  24556  12th Gen Intel(R) Core(TM) i5-12600K    
+
+MPI Option Selected: intel
+------------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup\\cleanup-fluent-DESKTOP-PQLTOCI-24556.bat
+Fast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v232\fluent\fluent23.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+Note: Rank = 0: Process affinity not being set (6).
+
+Reading from DESKTOP-PQLTOCI:"C:/Users/williamstoy/Documents/GitHub/inertial-microfluidics-optimization/microfluidics-optimization_files/user_files/fluent-case-backup/FFF-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+       19905 cells,     1 cell zone  ...
+          19905 mixed cells,  zone id: 2
+       47540 faces,     4 face zones ...
+          44640 mixed interior faces,  zone id: 1
+           2512 triangular wall faces,  zone id: 5
+            194 mixed pressure-outlet faces,  zone id: 6
+            194 mixed velocity-inlet faces,  zone id: 7
+        8357 nodes,     1 node zone  ...
+Warning: reading 4 partition grid onto 1 compute node machine.
+         Combining every 4 partitions.
+  Done.
+
+
+Checking the existence of compiled "libudf" UDF library for current platform.
+If needed will attempt auto-compilation...
+
+ 	 Make sure that UDF source files are in the directory 
+ 	 that contains your case and data files. If you have 
+ 	 an existing libudf directory, please remove this 
+ 	 directory to ensure that latest files are used. 
+  
+
+Will now auto-compile UDF library "libudf".
+The process tried to write to a nonexistent pipe.
+Copy "C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup\inertial-lift-udfs.c" to "C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup\\libudf\\src"
+Creating user_nt.udf file for 3ddp_host ...
+
+Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+Compiler and linker: Microsoft Visual C++
+# Generating ud_io1.h
+inertial-lift-udfs.c
+# Generating udf_names.c because of makefile inertial-lift-udfs.obj
+udf_names.c
+# Linking libudf.dll because of makefile user_nt.udf udf_names.obj inertial-lift-udfs.obj
+   Creating library libudf.lib and object libudf.exp
+Creating user_nt.udf file for 3ddp_node ...
+
+Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+Compiler and linker: Microsoft Visual C++
+# Generating ud_io1.h
+inertial-lift-udfs.c
+# Generating udf_names.c because of makefile inertial-lift-udfs.obj
+udf_names.c
+# Linking libudf.dll because of makefile user_nt.udf udf_names.obj inertial-lift-udfs.obj
+   Creating library libudf.lib and object libudf.exp
+
+Done.
+
+DESKTOP-PQLTOCI: Opening library "C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup\\libudf"...
+Done.
+
+DESKTOP-PQLTOCI: Opening library "C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup\\libudf"...
+	inertial_lift
+	inlet_x_velocity
+	precalculate_inertial_lift_coefficients_and_umax
+	port_input_vars_to_scheme
+	particle_init
+Done.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	inlet
+	outlet
+	walls
+	interior-fluid
+	fluid
+WARNING: Injection:  file-injection
+Cannot find file:  C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm
+(current working directory:  C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup )
+
+
+\nWARNING: Injection:  file-injection\nCannot find file:  C:\Users\rylab\Desktop\microfluidics-opt\microfluidics-optimization_files\dp0\FFF\Fluent\outlet.dpm\n(current working directory:  C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup )\n\n
+
+WARNING: Injection:  file-injection
+Cannot find file:  C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm
+(current working directory:  C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup )
+
+
+\nWARNING: Injection:  file-injection\nCannot find file:  C:\Users\rylab\Desktop\microfluidics-opt\microfluidics-optimization_files\dp0\FFF\Fluent\outlet.dpm\n(current working directory:  C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup )\n\n
+
+     parallel,
+WARNING: Injection:  file-injection
+Cannot find file:  C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm
+(current working directory:  C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup )
+
+
+\nWARNING: Injection:  file-injection\nCannot find file:  C:\Users\rylab\Desktop\microfluidics-opt\microfluidics-optimization_files\dp0\FFF\Fluent\outlet.dpm\n(current working directory:  C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup )\n\n
+
+Adjoint Solver is activated.
+
+Done.
+
+> (cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame4(User-Defined)*Table1*Table3(User Defined)*PushButton1(Functions)")
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuFunctions*Compiled...")
+(cx-gui-do cx-activate-item "Compiled UDFs*Table1*Frame1*Frame2*PushButton1( Add)")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "inertial-lift-udfs.c") "Source Files (*.c *.cpp )")
+(cx-gui-do cx-activate-item "Compiled UDFs*Frame8*PushButton2(Build)")
+(cx-gui-do cx-activate-item "Question*OK")
+The process tried to write to a nonexistent pipe.
+Copy "C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup\inertial-lift-udfs.c" to "C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup\\libudf\\src"
+Files udf_names.c and user_nt.udf in 3ddp_host are up-to-date.
+
+Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+Compiler and linker: Microsoft Visual C++
+Files udf_names.c and user_nt.udf in 3ddp_node are up-to-date.
+
+Copyright 1987-2023 ANSYS, Inc. All Rights Reserved.
+Compiler and linker: Microsoft Visual C++
+
+DESKTOP-PQLTOCI: Opening library "C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup\\libudf"...
+Done.
+
+DESKTOP-PQLTOCI: Opening library "C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup\\libudf"...
+	inertial_lift
+	inlet_x_velocity
+	precalculate_inertial_lift_coefficients_and_umax
+	port_input_vars_to_scheme
+	particle_init
+Done.
+
+Done.
+
+WARNING: Injection:  file-injection
+Cannot find file:  C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm
+(current working directory:  C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup )
+
+
+\nWARNING: Injection:  file-injection\nCannot find file:  C:\Users\rylab\Desktop\microfluidics-opt\microfluidics-optimization_files\dp0\FFF\Fluent\outlet.dpm\n(current working directory:  C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup )\n\n
+
+WARNING: Injection:  file-injection
+Cannot find file:  C:\\Users\\rylab\\Desktop\\microfluidics-opt\\microfluidics-optimization_files\\dp0\\FFF\\Fluent\\outlet.dpm
+(current working directory:  C:\\Users\\williamstoy\\Documents\\GitHub\\inertial-microfluidics-optimization\\microfluidics-optimization_files\\user_files\\fluent-case-backup )
+
+
+\nWARNING: Injection:  file-injection\nCannot find file:  C:\Users\rylab\Desktop\microfluidics-opt\microfluidics-optimization_files\dp0\FFF\Fluent\outlet.dpm\n(current working directory:  C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization\microfluidics-optimization_files\user_files\fluent-case-backup )\n\n
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-activate-item "Compiled UDFs*PanelButtons*PushButton2(Cancel)")
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  16:17:43, 12 Aug 2023 Eastern Daylight Time 
+Total Transcript Time: 0 Minute 46 Second.

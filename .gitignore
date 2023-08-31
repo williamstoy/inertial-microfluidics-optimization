@@ -24,3 +24,7 @@ microfluidics-optimization_files/dp0/FFF/Fluent/SolutionMonitor.gz
 microfluidics-optimization_files/dp0/FFF/Fluent/*.cas.h5
 cleanup-fluent-*.bat
 microfluidics-optimization_files/progress_files/dp0/FFF/Fluent/*.png
+microfluidics-optimization_files/user_files/data/old-analysis/*.*
+microfluidics-optimization_files/user_files/data/old-analysis/
+microfluidics-optimization_files/dp0/FFF/Fluent/FFF.3.ip
+microfluidics-optimization_files/dp0/FFF/Fluent/FFF.3.set
