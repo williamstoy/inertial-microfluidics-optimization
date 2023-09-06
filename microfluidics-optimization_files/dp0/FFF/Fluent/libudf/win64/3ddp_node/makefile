@@ -1,6 +1,6 @@
 ###########################################################
 ##
-## Copyright 1987-2021 ANSYS, Inc. All Rights Reserved. 
+## Copyright 1987-2023 ANSYS, Inc. All Rights Reserved. 
 ## All Rights Reserved  
 ##
 ###########################################################
@@ -37,8 +37,8 @@
 !INCLUDE user_nt.udf
 
 # These need to be updated for each release.
-LIB_RELEASE=2120
-RELEASE=21.2.0
+LIB_RELEASE=2320
+RELEASE=23.2.0
 
 # If a local path can be found, use it
 !IF (("$(FLUENT_INC_LOCAL_RESERVED)" != "") && ("$(FLUENT_INC)" == ""))
@@ -103,12 +103,11 @@ LIBS = /Libpath:"$(FLUENT_INC)"\fluent$(RELEASE)\$(FLUENT_ARCH)\$(VERSION)  /Lib
 
 SRC = ..\..\src^\
 
-CC = cl
+CC = cl -nologo
 
 # compile flags 
 #  /c for compile only,  /Za for ansi c and __STDC__ is set
-#  STOY: /Zi to generate the program database (.pdb) files that you'll later find in the binary output folders.
-CFLAGS = /c /Za /Zi /DUDF_EXPORTING /DUDF_NT /DWIN64 /EHa /wd4224
+CFLAGS = /c /DUDF_EXPORTING /DUDF_NT /DWIN64 /EHa /wd4224
 
 TARGET = libudf.dll
 UDFDATA = udf_names.c
@@ -175,7 +174,7 @@ $(SRC_OBJECT): $(CSOURCES)
 	
 $(TARGET): makefile user_nt.udf $(UDF_OBJECT) $(SRC_OBJECT) 
 	@echo # Linking $@ because of $?
-	link  $(LIBS) /dll /debug /assemblydebug /out:$(TARGET) \
+	link -nologo $(LIBS) /dll   /out:$(TARGET) \
 	      $(OBJECTS)  $(FLUENT_LIB) $(GPU_LIB)
 	
 $(UDFDATA): makefile $(SRC_OBJECT)
@@ -205,7 +204,7 @@ $(UDFDATA): makefile $(SRC_OBJECT)
 	
 
 clean:
-	@del  *.dll *.obj *.ilk *.exp *.lib *.pdb *.c
+	@del  *.dll *.obj *.ilk *.exp *.lib *.pdb *.c 
 
 tellfluentarch:
 	@echo FLUENT_ARCH: $(FLUENT_ARCH)

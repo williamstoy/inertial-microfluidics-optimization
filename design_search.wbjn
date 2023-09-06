@@ -51,9 +51,9 @@ z_exclude_param = Parameters.GetParameter("P37")
 
 print("\n\n\n-------------------------------------------\n")
 
-widths = [120]
+widths = [150, 160]
 nreplicates = 1
-max_number_of_fluent_iterations = 2000
+max_number_of_fluent_iterations = 4000
 number_of_steps = 100
 max_dpm_particles = 5000
 z_exclude_value = 3
@@ -61,28 +61,12 @@ z_exclude_value = 3
 base_re = 80
 re_array=[
 	base_re*0.25,
-	base_re*0.30,
-	base_re*0.35,
-	base_re*0.40,
-	base_re*0.45,
 	base_re*0.50,
-	base_re*0.55,
-	base_re*0.60,
-	base_re*0.65,
 	base_re*0.75,
 	base_re*1.00
 ]
 
 base_height = widths[0]/4
-notchheights = [
-	base_height,
-	base_height+1,
-	base_height-1,
-	base_height+5,
-	base_height-5,
-	base_height+10,
-	base_height-10
-]
 notchheights = [base_height]
 
 ndesignpoints = len(widths)
@@ -112,7 +96,7 @@ for i in range(0,nreplicates):
 		heightundernotch = height - notchheight
 		notchlength = height
 
-		sizefactor = (40*80)/equilateral_area(3.5)
+		sizefactor = (40*80)/equilateral_area(2)
 		bodysizing = equilateral_side((width*height)/sizefactor)
 
 		print("\n- STARTING NEW SIMULATION -")

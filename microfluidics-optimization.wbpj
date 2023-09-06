@@ -2,10 +2,10 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">119720</timestamp-max>
+    <timestamp-max valType="Int64">120828</timestamp-max>
     <framework-build-version valType="String">23.2.142.0</framework-build-version>
     <external-version-string valType="String">2023 R2</external-version-string>
-    <last-saved-utc valType="String">08/28/2023 19:48:49</last-saved-utc>
+    <last-saved-utc valType="String">09/01/2023 12:34:20</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">rylab@DESKTOP-R5L45J1:C:\Users\rylab\AppData\Local\Temp\WorkbenchLogs\CoreEvents8028.log</ArrayEntry>
@@ -24,6 +24,7 @@
       <ArrayEntry Index="13">williamstoy@DESKTOP-PQLTOCI:C:\Users\williamstoy\AppData\Local\Temp\WorkbenchLogs\CoreEvents8064.log</ArrayEntry>
       <ArrayEntry Index="14">williamstoy@DESKTOP-PQLTOCI:C:\Users\williamstoy\AppData\Local\Temp\WorkbenchLogs\CoreEvents4588.log</ArrayEntry>
       <ArrayEntry Index="15">williamstoy@DESKTOP-PQLTOCI:C:\Users\williamstoy\AppData\Local\Temp\WorkbenchLogs\CoreEvents15912.log</ArrayEntry>
+      <ArrayEntry Index="16">williamstoy@DESKTOP-PQLTOCI:C:\Users\williamstoy\AppData\Local\Temp\WorkbenchLogs\CoreEvents13324.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -96,19 +97,19 @@
 "b551f776-ed89-4add-977d-a644e09a10c0": "/Parameters/Parameter:P30",
 "7cfd46ab-51ab-4d54-9577-09f9c5dfca71": "/Parameters/Parameter:P29",
 "1baea82c-721d-46c6-92e7-43b2f319e599": "/Parameters/Parameter:P32",
-"d35a66d1-de8a-4faf-b0e8-7ed6697b49d7": "/FileContainer/FileReference:F1330",
-"925c27bd-3a88-4f7e-ae4f-43758c159e69": "/FileContainer/FileReference:F1332",
 "fd8036d4-d3c9-403d-994f-fa06e3ad330d": "/FileContainer/FileReference:F1096",
 "b8b78174-a768-4ad8-ae57-f95bb142d8c8": "/Parameters/Parameter:P37",
 "87c14a08-c38a-4e17-8fa9-74c19bfc8471": "/Parameters/Parameter:P33",
 "8f193d32-2b25-4c92-ab0a-417ace1ef203": "/FileContainer/FileReference:F1103",
 "99d403e3-1efb-41b8-b3c1-8b7acfa72659": "/FileContainer/FileReference:F1104",
 "ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": "/Parameters/Parameter:P34",
-"e881b580-1130-4252-aa5c-d81895c29987": "/FileContainer/FileReference:F1324",
-"2ce9587d-9be2-4adb-b2d4-8fade6cd0f7a": "/FileContainer/FileReference:F1327",
-"7afd2437-d4cc-4af6-ae3b-0b928a6d3f80": "/FileContainer/FileReference:F1328",
-"67deb354-3e3f-4f24-8c19-73c1b9f1b077": "/FileContainer/FileReference:F1331",
-"0d686f47-cf6a-4fcf-961b-240c2c146fdd": "/FileContainer/FileReference:F1329"
+"f5bbcf2b-be07-41b5-9245-47bac44de339": "/FileContainer/FileReference:F1338",
+"b3e293ce-d34b-444c-89d1-9de30695d627": "/FileContainer/FileReference:F1341",
+"198573ba-9dca-42b4-b730-25b16a332c9d": "/FileContainer/FileReference:F1342",
+"a507c4ac-918b-436c-a08b-7bea409a5109": "/FileContainer/FileReference:F1345",
+"f82a42f8-f63d-4851-a56b-44775d13a250": "/FileContainer/FileReference:F1346",
+"b41977f3-0100-47c8-9eef-749aede65b86": "/FileContainer/FileReference:F1344",
+"a68f5845-3c34-4727-8efb-87e144f80239": "/FileContainer/FileReference:F1343"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -192,7 +193,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119719, "Input": 2390, "Output": 2390}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 120827, "Input": 2390, "Output": 2390}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/FileContainer/FileReference:F4" Version="1.0">
@@ -208,17 +209,17 @@
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F3</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$b4cb4677-10db-4398-9d6c-4a6bc5e034b9, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 97}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$b4cb4677-10db-4398-9d6c-4a6bc5e034b9, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 98}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F5" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F5</object-name>
         <member-data valType="String">{"DisplayText": "FFF.mshdb", "FileType": $$9db66e4d-157b-4785-8503-470c54a4ed0b, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\global\MECH\FFF.mshdb", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1332" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1344" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1332</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.3-1427-00300.dat.h5", "FileType": $$da48f224-10e8-4a27-a8bc-7b7c6f2f9687, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3-1427-00300.dat.h5", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F1344</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionMonitor.gz", "FileType": $$591e1269-46b1-4c9b-9dd4-83241b54dc6f, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": False, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\SolutionMonitor.gz", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F16" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -230,10 +231,10 @@
         <object-name valType="String">F17</object-name>
         <member-data valType="String">{"DisplayText": "FFF.1-4-00378.dat.h5", "FileType": $$da48f224-10e8-4a27-a8bc-7b7c6f2f9687, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.1-4-00378.dat.h5", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1328" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1346" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1328</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.3.set", "FileType": $$9b5659b5-66bf-46b5-81ff-cc9a5980b748, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3.set", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F1346</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.3-1443-00266.dat.h5", "FileType": $$da48f224-10e8-4a27-a8bc-7b7c6f2f9687, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3-1443-00266.dat.h5", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F341" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -245,20 +246,20 @@
         <object-name valType="String">F229</object-name>
         <member-data valType="String">{"DisplayText": "FFF.msh", "FileType": $$cfd24ec8-5a43-4d38-83fe-4402828501cb, "DependentFiles": [], "ContainerAssociations": ["Mesh"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\MECH\FFF.msh", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1331" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1342" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1331</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.3-1427.cas.h5", "FileType": $$987bb5f2-d6a8-4790-b328-174102cfa4db, "DependentFiles": [$$925c27bd-3a88-4f7e-ae4f-43758c159e69], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3-1427.cas.h5", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F1342</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.3.set", "FileType": $$9b5659b5-66bf-46b5-81ff-cc9a5980b748, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3.set", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F1096" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F1096</object-name>
         <member-data valType="String">{"DisplayText": "outlet.dpm", "FileType": $$cef87c80-0f88-4abd-afc6-3700f1d4d2cc, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\outlet.dpm", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1329" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1345" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1329</object-name>
-        <member-data valType="String">{"DisplayText": "FFF.3.ip", "FileType": $$bbce0a3d-fa9f-4b3a-9e46-eb691e6f93ec, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3.ip", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F1345</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.3-1443.cas.h5", "FileType": $$987bb5f2-d6a8-4790-b328-174102cfa4db, "DependentFiles": [$$f82a42f8-f63d-4851-a56b-44775d13a250], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3-1443.cas.h5", "ReferenceCount": 1}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F1104" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -270,19 +271,19 @@
         <object-name valType="String">F1103</object-name>
         <member-data valType="String">{"DisplayText": "libudf.dll", "FileType": $$3ca1cc39-1a4a-4880-a76c-b2e4faec0812, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\libudf\win64\3ddp_host\libudf.dll", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1330" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1343" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1330</object-name>
-        <member-data valType="String">{"DisplayText": "SolutionMonitor.gz", "FileType": $$591e1269-46b1-4c9b-9dd4-83241b54dc6f, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": False, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\SolutionMonitor.gz", "ReferenceCount": 1}</member-data>
+        <object-name valType="String">F1343</object-name>
+        <member-data valType="String">{"DisplayText": "FFF.3.ip", "FileType": $$bbce0a3d-fa9f-4b3a-9e46-eb691e6f93ec, "DependentFiles": [], "ContainerAssociations": ["Solution"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3.ip", "ReferenceCount": 1}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1324" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1338" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1324</object-name>
+        <object-name valType="String">F1338</object-name>
         <member-data valType="String">{"DisplayText": "FFF.3.msh", "FileType": $$cfd24ec8-5a43-4d38-83fe-4402828501cb, "DependentFiles": [], "ContainerAssociations": ["Mesh", "Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\MECH\FFF.3.msh", "ReferenceCount": 2}</member-data>
       </Object>
-      <Object Name="/FileContainer/FileReference:F1327" Version="1.0">
+      <Object Name="/FileContainer/FileReference:F1341" Version="1.0">
         <class-type valType="String">FileReference</class-type>
-        <object-name valType="String">F1327</object-name>
+        <object-name valType="String">F1341</object-name>
         <member-data valType="String">{"DisplayText": "FFF.3-Setup-Output.cas.h5", "FileType": $$987bb5f2-d6a8-4790-b328-174102cfa4db, "DependentFiles": [], "ContainerAssociations": ["Setup"], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\FFF\Fluent\FFF.3-Setup-Output.cas.h5", "ReferenceCount": 1}</member-data>
       </Object>
     </Container>
@@ -291,7 +292,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119716, "Input": 2391, "Output": 2391}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 120822, "Input": 2391, "Output": 2391}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Messages/StoredMessage:Message 26" Version="1.0">
@@ -609,6 +610,187 @@ Parameter name: index
    at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
    at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/13/2023 23:42:51, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
       </Object>
+      <Object Name="/Messages/StoredMessage:Message 27" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 27</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:31:41, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 28" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 28</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Error", "MessageCategory": "None", "Summary": 'Could not execute (load "C:/Users/williamstoy/Documents/GitHub/inertial-microfluidics-optimization/microfluidics-optimization_files/user_files/particle-tracking-repeated-steps-with-bootstrap.scm") as Fluent editor is not running. Please start editor first.', "Details": None, "Association": "", "DateTimeStamp": 08/31/2023 14:34:35, "Visibility": "Error", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 29" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 29</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:37:44, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 30" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 30</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:39:51, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 31" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 31</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:41:20, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 32" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 32</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:43:27, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 33" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 33</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:45:59, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 34" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 34</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:48:00, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 35" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 35</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:49:55, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 36" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 36</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:52:50, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 37" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 37</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:54:17, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 38" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 38</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:56:20, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 39" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 39</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:57:42, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 40" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 40</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 14:59:35, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 41" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 41</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 15:01:59, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 42" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 42</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 15:03:50, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": "0"}</member-data>
+      </Object>
+      <Object Name="/Messages/StoredMessage:Message 43" Version="1.0">
+        <class-type valType="String">StoredMessage</class-type>
+        <object-name valType="String">Message 43</object-name>
+        <member-data valType="String">{"DisplayText": "Message", "MessageType": "Information", "MessageCategory": "None", "Summary": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Details": """Unable to process data from SolutionMonitor.gz file. System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+   at System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   at Ansys.Fluent.FluentDataFileScanner._readVariablesDataSection(List`1 variables)""", "Association": "", "DateTimeStamp": 08/31/2023 15:05:42, "Visibility": "Information", "MessageSourceContainer": None, "MessageSourceEntity": None, "AdditionalMessageData": None, "DesignPoint": None}</member-data>
+      </Object>
     </Container>
     <Container Name="Parameters" Version="1.0">
       <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:parameters</container-type>
@@ -617,13 +799,13 @@ Parameter name: index
       <maxUpdateOrder valType="Double">4</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119714, "Input": 119715, "Output": 2394}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 120820, "Input": 120821, "Output": 2394}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup in FFF, Solution in FFF"}, "Parameters": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": "P9 * 1[m]", "$$2e762722-1a95-4691-9b12-37fc8f135048": "P10 * 1[m]", "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": "P8 * 1[m]", "$$9fec8816-c253-4403-b837-f692c63e7fa2": "P11 * 1[m]", "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": "P12 * 1[m]", "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": "100 [um]", "$$c302e589-8045-469a-9711-7b0ae9de103c": "5.250E-06", "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": "0.0005", "$$a321d115-7f65-4484-a924-b4a9969d9503": "120E-06", "$$b5b09112-e81d-4474-b649-be5f194167df": "60E-06", "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": "60E-06", "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": "P10-P22", "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": "1E-05", "$$4309fc0c-4685-485a-8e91-0a27aad1e726": "434", "$$d7d19b4e-9d83-4da9-a961-e861146e41db": "41", "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": "30", "$$33bba606-2845-40e3-aeb8-735d411eb057": "0.0001", "$$b63ce719-8721-4702-9b11-fa51313e4559": "30E-06", "$$0e668955-c20c-4a6a-b429-69478b5b593a": "5000", "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": "80", "$$b551f776-ed89-4add-977d-a644e09a10c0": "2000", "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": "100", "$$1baea82c-721d-46c6-92e7-43b2f319e599": "0", "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": r'"C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization"', "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": "3"}, "ParameterErrors": {}, "CurrentValues": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00012 [m]"}, "$$2e762722-1a95-4691-9b12-37fc8f135048": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05 [m]"}, "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0005 [m]"}, "$$9fec8816-c253-4403-b837-f692c63e7fa2": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05 [m]"}, "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3E-05 [m]"}, "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "100 [um]"}, "$$c302e589-8045-469a-9711-7b0ae9de103c": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5.25E-06 [m]"}, "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0005"}, "$$a321d115-7f65-4484-a924-b4a9969d9503": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00012"}, "$$b5b09112-e81d-4474-b649-be5f194167df": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05"}, "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05"}, "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3E-05"}, "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1E-05"}, "$$4309fc0c-4685-485a-8e91-0a27aad1e726": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "434"}, "$$d7d19b4e-9d83-4da9-a961-e861146e41db": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "41"}, "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "30"}, "$$33bba606-2845-40e3-aeb8-735d411eb057": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0001"}, "$$68517ec8-3f0d-42a4-8b8f-107d561ec2a1": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5932.5778 [Pa]"}, "$$b63ce719-8721-4702-9b11-fa51313e4559": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]", "value": 3E-05}, "$$0e668955-c20c-4a6a-b429-69478b5b593a": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5000"}, "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "80"}, "$$b551f776-ed89-4add-977d-a644e09a10c0": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2000"}, "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "100"}, "$$1baea82c-721d-46c6-92e7-43b2f319e599": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0"}, "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.StringSpec", "value": r"C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization"}, "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3"}}, "ParameterStatus": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": "UpToDate", "$$2e762722-1a95-4691-9b12-37fc8f135048": "UpToDate", "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": "UpToDate", "$$9fec8816-c253-4403-b837-f692c63e7fa2": "UpToDate", "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": "UpToDate", "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": "UpToDate", "$$c302e589-8045-469a-9711-7b0ae9de103c": "UpToDate", "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": "UpToDate", "$$a321d115-7f65-4484-a924-b4a9969d9503": "UpToDate", "$$b5b09112-e81d-4474-b649-be5f194167df": "UpToDate", "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": "UpToDate", "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": "UpToDate", "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": "UpToDate", "$$4309fc0c-4685-485a-8e91-0a27aad1e726": "UpToDate", "$$d7d19b4e-9d83-4da9-a961-e861146e41db": "UpToDate", "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": "UpToDate", "$$33bba606-2845-40e3-aeb8-735d411eb057": "UpToDate", "$$68517ec8-3f0d-42a4-8b8f-107d561ec2a1": "UpToDate", "$$b63ce719-8721-4702-9b11-fa51313e4559": "UpToDate", "$$0e668955-c20c-4a6a-b429-69478b5b593a": "UpToDate", "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": "UpToDate", "$$b551f776-ed89-4add-977d-a644e09a10c0": "UpToDate", "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": "UpToDate", "$$1baea82c-721d-46c6-92e7-43b2f319e599": "UpToDate", "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": "UpToDate", "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": "UpToDate"}, "Note": None, "IsUpToDate": True, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": None, "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False", "UpdatedComponents": "Setup in FFF, Solution in FFF"}, "Parameters": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": "P9 * 1[m]", "$$2e762722-1a95-4691-9b12-37fc8f135048": "P10 * 1[m]", "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": "P8 * 1[m]", "$$9fec8816-c253-4403-b837-f692c63e7fa2": "P11 * 1[m]", "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": "P12 * 1[m]", "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": "100 [um]", "$$c302e589-8045-469a-9711-7b0ae9de103c": "7.000E-06", "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": "0.0005", "$$a321d115-7f65-4484-a924-b4a9969d9503": "160E-06", "$$b5b09112-e81d-4474-b649-be5f194167df": "80E-06", "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": "80E-06", "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": "P10-P22", "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": "1E-05", "$$4309fc0c-4685-485a-8e91-0a27aad1e726": "579", "$$d7d19b4e-9d83-4da9-a961-e861146e41db": "41", "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": "30", "$$33bba606-2845-40e3-aeb8-735d411eb057": "0.0001", "$$b63ce719-8721-4702-9b11-fa51313e4559": "40E-06", "$$0e668955-c20c-4a6a-b429-69478b5b593a": "5000", "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": "80", "$$b551f776-ed89-4add-977d-a644e09a10c0": "2000", "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": "100", "$$1baea82c-721d-46c6-92e7-43b2f319e599": "0", "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": r'"C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization"', "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": "3"}, "ParameterErrors": {}, "CurrentValues": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00016 [m]"}, "$$2e762722-1a95-4691-9b12-37fc8f135048": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05 [m]"}, "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0005 [m]"}, "$$9fec8816-c253-4403-b837-f692c63e7fa2": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05 [m]"}, "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4E-05 [m]"}, "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "100 [um]"}, "$$c302e589-8045-469a-9711-7b0ae9de103c": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "7E-06 [m]"}, "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0005"}, "$$a321d115-7f65-4484-a924-b4a9969d9503": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00016"}, "$$b5b09112-e81d-4474-b649-be5f194167df": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05"}, "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05"}, "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4E-05"}, "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "1E-05"}, "$$4309fc0c-4685-485a-8e91-0a27aad1e726": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "579"}, "$$d7d19b4e-9d83-4da9-a961-e861146e41db": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "41"}, "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "30"}, "$$33bba606-2845-40e3-aeb8-735d411eb057": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.0001"}, "$$68517ec8-3f0d-42a4-8b8f-107d561ec2a1": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3074.8031 [Pa]"}, "$$b63ce719-8721-4702-9b11-fa51313e4559": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]", "value": 4E-05}, "$$0e668955-c20c-4a6a-b429-69478b5b593a": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5000"}, "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "80"}, "$$b551f776-ed89-4add-977d-a644e09a10c0": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "2000"}, "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "100"}, "$$1baea82c-721d-46c6-92e7-43b2f319e599": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0"}, "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.StringSpec", "value": r"C:\Users\williamstoy\Documents\GitHub\inertial-microfluidics-optimization"}, "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3"}}, "ParameterStatus": {"$$bbc3a93d-7e35-4659-9886-c9de81085f3c": "UpToDate", "$$2e762722-1a95-4691-9b12-37fc8f135048": "UpToDate", "$$69d3819f-9ad8-44f6-af2d-11f0710461d9": "UpToDate", "$$9fec8816-c253-4403-b837-f692c63e7fa2": "UpToDate", "$$9d6374c6-9142-48e9-a6a4-0eb1d9bf42ee": "UpToDate", "$$87c14a08-c38a-4e17-8fa9-74c19bfc8471": "UpToDate", "$$c302e589-8045-469a-9711-7b0ae9de103c": "UpToDate", "$$cefdfb4a-ec2e-42a5-8411-9ded0e672ff5": "UpToDate", "$$a321d115-7f65-4484-a924-b4a9969d9503": "UpToDate", "$$b5b09112-e81d-4474-b649-be5f194167df": "UpToDate", "$$53010dcc-62a1-4fb4-bebb-7f990f3eaeb4": "UpToDate", "$$c0cdaac0-9fad-4b08-8f0e-5365be44c3b8": "UpToDate", "$$9cdad1b9-b44c-4a58-9506-ba3a3c1a6fbe": "UpToDate", "$$4309fc0c-4685-485a-8e91-0a27aad1e726": "UpToDate", "$$d7d19b4e-9d83-4da9-a961-e861146e41db": "UpToDate", "$$ac2f2f11-9357-4667-b1f3-8afa277dca82": "UpToDate", "$$33bba606-2845-40e3-aeb8-735d411eb057": "UpToDate", "$$68517ec8-3f0d-42a4-8b8f-107d561ec2a1": "UpToDate", "$$b63ce719-8721-4702-9b11-fa51313e4559": "UpToDate", "$$0e668955-c20c-4a6a-b429-69478b5b593a": "UpToDate", "$$7cfd46ab-51ab-4d54-9577-09f9c5dfca71": "UpToDate", "$$b551f776-ed89-4add-977d-a644e09a10c0": "UpToDate", "$$292b8640-7ca4-4fcf-be54-8047b7fc9998": "UpToDate", "$$1baea82c-721d-46c6-92e7-43b2f319e599": "UpToDate", "$$ec4f275b-4fc4-43d3-877e-b2e4e546cbfe": "UpToDate", "$$b8b78174-a768-4ad8-ae57-f95bb142d8c8": "UpToDate"}, "Note": None, "IsUpToDate": True, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
         <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Parameters/DesignPoint:1" Version="1.0">
@@ -670,12 +852,12 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P1" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P1</object-name>
-        <member-data valType="String">{"DisplayText": "channel_width", "PersistedNamedValueEntityReference": None, "Expression": "P9 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00012 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
+        <member-data valType="String">{"DisplayText": "channel_width", "PersistedNamedValueEntityReference": None, "Expression": "P9 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00016 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P2" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P2</object-name>
-        <member-data valType="String">{"DisplayText": "channel_height", "PersistedNamedValueEntityReference": None, "Expression": "P10 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
+        <member-data valType="String">{"DisplayText": "channel_height", "PersistedNamedValueEntityReference": None, "Expression": "P10 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P3" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -685,12 +867,12 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P4" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P4</object-name>
-        <member-data valType="String">{"DisplayText": "notch_length", "PersistedNamedValueEntityReference": None, "Expression": "P11 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
+        <member-data valType="String">{"DisplayText": "notch_length", "PersistedNamedValueEntityReference": None, "Expression": "P11 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P5" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P5</object-name>
-        <member-data valType="String">{"DisplayText": "notch_height", "PersistedNamedValueEntityReference": None, "Expression": "P12 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
+        <member-data valType="String">{"DisplayText": "notch_height", "PersistedNamedValueEntityReference": None, "Expression": "P12 * 1[m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4E-05 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P33" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -700,7 +882,7 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P7" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P7</object-name>
-        <member-data valType="String">{"DisplayText": "Body Sizing Element Size", "PersistedNamedValueEntityReference": None, "Expression": "5.25E-06 [m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5.25E-06 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "6 [um]", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
+        <member-data valType="String">{"DisplayText": "Body Sizing Element Size", "PersistedNamedValueEntityReference": None, "Expression": "7E-06 [m]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "7E-06 [m]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "6 [um]", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Length"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P8" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -710,22 +892,22 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P9" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P9</object-name>
-        <member-data valType="String">{"DisplayText": "channel_width", "PersistedNamedValueEntityReference": None, "Expression": "120E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00012"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "channel_width", "PersistedNamedValueEntityReference": None, "Expression": "160E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "0.00016"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P10" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P10</object-name>
-        <member-data valType="String">{"DisplayText": "channel_height", "PersistedNamedValueEntityReference": None, "Expression": "60E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "channel_height", "PersistedNamedValueEntityReference": None, "Expression": "80E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P11" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P11</object-name>
-        <member-data valType="String">{"DisplayText": "notch_length", "PersistedNamedValueEntityReference": None, "Expression": "60E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "6E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "notch_length", "PersistedNamedValueEntityReference": None, "Expression": "80E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "8E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P12" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P12</object-name>
-        <member-data valType="String">{"DisplayText": "notch_height", "PersistedNamedValueEntityReference": None, "Expression": "P10-P22", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "notch_height", "PersistedNamedValueEntityReference": None, "Expression": "P10-P22", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "4E-05"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P13" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -735,7 +917,7 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P28" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P28</object-name>
-        <member-data valType="String">{"DisplayText": "volumetric_flow_rate_ul_per_min", "PersistedNamedValueEntityReference": None, "Expression": "434", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "434"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
+        <member-data valType="String">{"DisplayText": "volumetric_flow_rate_ul_per_min", "PersistedNamedValueEntityReference": None, "Expression": "579", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "579"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Dimensionless"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P15" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -755,12 +937,12 @@ Parameter name: index
       <Object Name="/Parameters/Parameter:P26" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P26</object-name>
-        <member-data valType="String">{"DisplayText": "report-def-inlet-pressure-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "5932.5778 [Pa]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Pressure"}}</member-data>
+        <member-data valType="String">{"DisplayText": "report-def-inlet-pressure-op", "PersistedNamedValueEntityReference": None, "Expression": None, "Usage": "DirectOutput", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3074.8031 [Pa]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Output", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Pressure"}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P22" Version="1.0">
         <class-type valType="String">Parameter</class-type>
         <object-name valType="String">P22</object-name>
-        <member-data valType="String">{"DisplayText": "height_under_notch", "PersistedNamedValueEntityReference": None, "Expression": "30E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]", "value": 3E-05}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": 0, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 1.79769313486231E+308}}</member-data>
+        <member-data valType="String">{"DisplayText": "height_under_notch", "PersistedNamedValueEntityReference": None, "Expression": "40E-06", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]", "value": 4E-05}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.RealSpec`1[[System.Double, mscorlib]], Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": 0, "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": False, "ReuseJournalVariables": False, "UndefinedValue": 1.79769313486231E+308}}</member-data>
       </Object>
       <Object Name="/Parameters/Parameter:P27" Version="1.0">
         <class-type valType="String">Parameter</class-type>
@@ -975,7 +1157,7 @@ Parameter name: index
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 119648, "Input": 105124, "Output": 2397}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 120780, "Input": 120414, "Output": 2397}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Schematic/System:FFF" Version="1.0">

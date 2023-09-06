@@ -8,9 +8,9 @@ close all; clc;
 % output what pressure - dual y 1
 % output how good focusing? - dual y 2
 
-path = '../';
+path = '../exc3 with bs3p5/';
 
-d = dir([path, 'step_data_*.csv']);
+d = dir([path, 'step_data_*exc3*.csv']);
 fprintf(1, 'Found %d Files\n', length(d));
 
 shape_db = [];
@@ -22,10 +22,12 @@ for i = 1:length(d)
     [shape_db, all_stat_db, data_db, data_std_db] = display_flow_progress(path, d(i).name, shape_db, all_stat_db, data_db, data_std_db, 0);
 end
 
+
+success_threshold_line = 0.1;
 for i = 1:size(shape_db, 1)
    figure(shape_db(i, 1)); 
    subplot(1,2,1); hold on;
-   plot([1, 150], [0.01, 0.01], 'r--', 'HandleVisibility', 'off');
+   plot([1, 150], [success_threshold_line, success_threshold_line], 'r--', 'HandleVisibility', 'off');
    width = shape_db(i, 2);
    height = shape_db(i,3);
    notch_height = shape_db(i,4);
@@ -35,7 +37,7 @@ for i = 1:size(shape_db, 1)
    set(gca(), 'FontSize', 16);
    
    subplot(1,2,2); hold on;
-   plot([1, 150], [0.01, 0.01], 'r--', 'HandleVisibility', 'off');
+   plot([1, 150], [success_threshold_line, success_threshold_line], 'r--', 'HandleVisibility', 'off');
    %ylabel('3 STDs Y and Z (\mum)');
    xlabel('Step #');
    xlim([1,100]);
@@ -108,7 +110,7 @@ function [shape_db, all_stat_db, data_db, data_std_db] = display_flow_progress(f
         %plot(2 * 3 * sqrt(data(:,4).^2 + data(:,2).^2), 'Color', [0 1-(re-50)/(166-50) 1-(re-50)/(166-50)]);
         %title(sprintf('BY PRESSURE: Width: %d\\mum, Height: %d\\mum, H Under Notch: %d\\mum', width, height, height-notch_height));
         set(gca, 'YScale', 'log');
-        ylim([1e-3, 1e2]);
+        ylim([1e-2, 1e2]);
 
         % some files could be named with implicit zexclusion zone of 1,
         % otherwise explicitly include the zexclusion zone value in the
@@ -136,7 +138,7 @@ function [shape_db, all_stat_db, data_db, data_std_db] = display_flow_progress(f
         % PLOT FOCUS VS STEP NUMBER
         subplot(1,2,2); hold on;
         set(gca, 'YScale', 'log');
-        ylim([1e-3, 1e2]);
+        ylim([1e-2, 1e2]);
 
         xdata = (1:length(focus_quality));
         plot3(xdata, focus_quality, (1:length(focus_quality))*pressure_drop, 'Color', color, 'LineWidth', 3);

@@ -10,7 +10,7 @@ close all; clc;
 
 path = '../';
 
-d = dir([path, 'step_data_*.csv']);
+d = dir([path, 'step_data_*exc3*.csv']);
 fprintf(1, 'Found %d Files\n', length(d));
 
 shape_db = [];
