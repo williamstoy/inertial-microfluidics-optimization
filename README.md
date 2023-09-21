@@ -16,6 +16,10 @@ To run the one off simulation in Fluent:
 2. read in `.\microfluidics-optimization_files\user_files\particle-tracking-repeated-steps-with-bootstrap.scm`
 
 ## Updating UDFs
+### Prerequisites
+- Install Visual Studio 2019 (UDF compilation does not seem to work with VS2022)
+
+### Steps
 If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\FFF\Fluent\inertial-lift-udfs.c`
 1. ALWAYS delete the old 'libudf' folder before trying to recompile
     - `del /f .\microfluidics-optimization_files\dp0\FFF\Fluent\libudf`
@@ -33,6 +37,7 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 9. Click the 'Load' button. You should see a list of the udf functions as the last output if the operation was successful.
 
 ## Troubleshooting
-Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager
+
+Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager (This can happen if fluent crashes on a previous run)
 ### Fatal error LNK1112:
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
