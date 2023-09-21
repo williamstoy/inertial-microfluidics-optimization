@@ -61,3 +61,19 @@ Always delete the \libudf folder before recompiling. If the folder cannot be del
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
 ### The breakpoint will not currently be hit. No symbols have been loaded for this document.
 Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
+
+From post by eeroi (eero) on CFD Online Forum:
+```
+- Remember to back original files up before you make any changes.
+- Change the makefile template makefile_nt.udf (in one of the Fluent installation folders):
+    CFLAGS = /c /Za /Zi /DUDF_EXPORTING /DUDF_NT /DWIN64 /EHa /wd4224
+    link $(LIBS) /dll /debug /assemblydebug /out:$(TARGET)
+
+In words, you add the compiler flag /Zi and linker flags /debug /assemblydebug, nothing else. These options generate the program database (.pdb) files that you'll later find in the binary output folders.
+
+- Compile the UDF code in Fluent GUI and load the libudf library. This seems to be the best (most stable and universal) approach for compilation these days, earlier you had to run nmake in command prompt.
+- Open the source file in the "libudf/src" folder in Visual Studio (a free Express version will do fine).
+- In Visual Studio, attach the code to fl_mpi1950.exe (Fluent 2019R3). This works in serial mode, in parallel you may have to attach to all Fluent processes (haven't used in years, don't remember anymore). You should see debug symbols loaded in VS.
+- Try adding a breakpoint on a code row. The red circle on the left hand side should be filled, if the attach was successful.
+- When you run the simulation, whenever the code with the breakpoint is called within Fluent, you should now break in Visual Studio and be able to see the variable content and track program flow. Please see https://ibb.co/K2pPh6K for a screenshot.
+```
