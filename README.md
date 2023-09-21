@@ -59,5 +59,5 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager (This can happen if fluent crashes on a previous run)
 ### Fatal error LNK1112:
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
-### No symbol file loaded for libudf.dll
+### The breakpoint will not currently be hit. No symbols have been loaded for this document.
 Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
