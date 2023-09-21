@@ -34,5 +34,5 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 
 ## Troubleshooting
 Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager
-# Fatal error LNK1112:
+### Fatal error LNK1112:
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
