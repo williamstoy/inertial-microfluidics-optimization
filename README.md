@@ -17,7 +17,7 @@ To run the one off simulation in Fluent:
 
 ## Updating UDFs
 ### Prerequisites
-- Install Visual Studio 2019 (UDF compilation does not seem to work with VS2022)
+- Install Visual Studio 2017 (UDF compilation does not seem to work with VS2022)
 
 ### Steps
 If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\FFF\Fluent\inertial-lift-udfs.c`
@@ -38,10 +38,12 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 10. Attach functions to corresponding hooks in Fluent by clicking 'User Defined' Tab > 'Function Hooks...'
 
 ## Debugging in Visual Studio
-- Install Visual Studio 2019
-    - Install all C and C++ tools for Desktop
+- Install Visual Studio 2017
+    - [Install all C and C++ tools for Desktop listed in this ANSYS forum post](https://web.archive.org/web/20221128211933/https://forum.ansys.com/forums/topic/how-can-i-properly-link-visual-studio-with-ansys-fluent-to-load-in-udfs/) and as shown below
+![imagevs2017](https://github.com/williamstoy/inertial-microfluidics-optimization/assets/51916749/1bc1b992-ba58-4a1b-81fd-ae954140eff1)
+
 - Open Fluent via the Cross Tools Command Window as above
-- In Visual Studio 2019, Open the project folder and open the udf .c file you loaded above
+- In Visual Studio, Open the project folder and open the udf .c file you loaded above
 - Attach Visual studio debugger to the Fluent process
     - 'Debug' > 'Attach to Process' > 'Available processes' > 'Filter processes' Search Box
     - Type 'fl' to filter for Fluent associated processes
@@ -58,4 +60,4 @@ Always delete the \libudf folder before recompiling. If the folder cannot be del
 ### Fatal error LNK1112:
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
 ### No symbol file loaded for libudf.dll
-Not sure how to solve this yet
+Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
