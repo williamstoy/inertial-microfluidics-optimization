@@ -49,6 +49,9 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
     - Click Attach
 - Set a breakpoint in the function you want to debug (The breakpoint should be a filled red circle.
     - If it is a circle with a red outline, see 'Troubleshooting' > 'No symbol file loaded for libudf.dll' below
+- Trigger the relevant function call in Fluent
+    - e.g. for a DEFINE_ON_DEMAND UDF macro function, run the function in 'User-Defined' Tab > 'Execute on Demand...'
+    - e.g. for a DEFINE_INIT UDF macro function, run 'Outline View' Panel > right click on 'Initialization' > 'Initialize'
 
 ## Troubleshooting
 Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager (This can happen if fluent crashes on a previous run)
