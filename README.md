@@ -28,3 +28,6 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 7. Build (leaving 'Use Built-In Compiler' unchecked)
    - If there are any errors related to the compilation, try checking the 'Use Built-In Compiler' box and click Build again
 8. Click the 'Load' button. You should see a list of the udf functions as the last output if the operation was successful.
+
+Troubleshooting:
+Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' processes
