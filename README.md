@@ -38,6 +38,7 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
 10. Attach functions to corresponding hooks in Fluent by clicking 'User Defined' Tab > 'Function Hooks...'
 
 ## Debugging in Visual Studio
+
 ### Instructions
 - Install Visual Studio 2017
     - Install all C and C++ tools for Desktop listed in reference [2]
@@ -64,7 +65,7 @@ If you make changes to the udf files at `.\microfluidics-optimization_files\dp0\
     - e.g. for a DEFINE_ON_DEMAND UDF macro function, run the function in 'User-Defined' Tab > 'Execute on Demand...'
     - e.g. for a DEFINE_INIT UDF macro function, run 'Outline View' Panel > right click on 'Initialization' > 'Initialize'
 
-## Troubleshooting
+### Troubleshooting
 Always delete the \libudf folder before recompiling. If the folder cannot be deleted because it is in use, close fluent and stop all 'fl*.exe' and 'cx*.exe' processes with the task manager (This can happen if fluent crashes on a previous run)
 ### Fluent Compile Error: Fatal error LNK1112
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
@@ -78,7 +79,7 @@ Current solution seems to be to restart Fluent and again?
 This indicates that you have a variable that has not been declared in your code and was not included from an external file or library
 This may also be because the files for an external library you have tried to include were not accessible. Include the files in the Compile window (both the .c and .h files). Note that there is a column on the right hand side for header files. [3]
 
-## References
+### References
 [1] [CFD Online - Simplest way debug fluent UDF, post by user `eeroi`](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
 
 [2] [ANSYS Forum - How can I properly link Visual Studio with ANSYS Fluent, to load in UDFs, post by user `ANSYS_MMadore`](https://web.archive.org/web/20221128211933/https://forum.ansys.com/forums/topic/how-can-i-properly-link-visual-studio-with-ansys-fluent-to-load-in-udfs/)
