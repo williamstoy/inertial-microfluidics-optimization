@@ -79,3 +79,5 @@ Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive
 Make sure that Visual Studio is not attached to the fluent process when trying to compile. If so, detach VS from the fluent process and try to compile again.
 ### Fluent Compile Error: Fatal Error LNK1168
 Current solution seems to be to restart Fluent and again?
+### Fluent Compile Error: Fatal Error LNK2019, LNK1120 (And many others): 'unresolved external symbol'
+This indicates that you have a variable that has not been declared in your code and was not included from an external file or library
