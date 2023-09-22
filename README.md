@@ -75,3 +75,5 @@ Always delete the \libudf folder before recompiling. If the folder cannot be del
 [StackOverflow answer](https://stackoverflow.com/questions/3563756/fatal-error-lnk1112-module-machine-type-x64-conflicts-with-target-machine-typ)
 ### Visual Studio: The breakpoint will not currently be hit. No symbols have been loaded for this document.
 Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
+### Fluent Compile Error: Fatal Error LNK1201
+Make sure that Visual Studio is not attached to the fluent process when trying to compile. If so, detach VS from the fluent process and try to compile again.
