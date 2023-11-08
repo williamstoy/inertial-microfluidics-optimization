@@ -73,11 +73,14 @@ Always delete the \libudf folder before recompiling. If the folder cannot be del
 Try: [CFD Online Forum Post - Simplest way debug fluent UDF](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
 #### Fluent Compile Error: Fatal Error LNK1201
 Make sure that Visual Studio is not attached to the fluent process when trying to compile. If so, detach VS from the fluent process and try to compile again.
-### Fluent Compile Error: Fatal Error LNK1168
+#### Fluent Compile Error: Fatal Error LNK1168
 Current solution seems to be to restart Fluent and try again?
 #### Fluent Compile Error: Fatal Error LNK2019, LNK1120 (And many others): 'unresolved external symbol'
 This indicates that you have a variable that has not been declared in your code and was not included from an external file or library
 This may also be because the files for an external library you have tried to include were not accessible. Include the files in the Compile window (both the .c and .h files). Note that there is a column on the right hand side for header files. [3]
+#### ERROR: chip-exec: function "{{ function-name }}" not found.
+This error may appear while running a calculation or DPM sample.
+Not sure how to debug this yet
 
 ### References
 [1] [CFD Online - Simplest way debug fluent UDF, post by user `eeroi`](https://web.archive.org/web/20211017011134/https://www.cfd-online.com/Forums/fluent-udf/206603-simplest-way-debug-fluent-udf.html)
